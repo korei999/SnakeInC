@@ -116,7 +116,6 @@ RedrawBoard(Piece * P, int ay, int ax)
 {
     Piece * tmp = P;
     while (tmp != NULL) {
-        // mvprintw(0, 0, "y(%d)x(%d)\n", tmp->y, tmp->x);
         mvaddch(ay, ax, '@');
         mvaddch(tmp->y, tmp->x, '*');
         tmp = tmp->next;
